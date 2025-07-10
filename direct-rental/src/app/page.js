@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header';
 import Hero from '@/components/layout/Hero';
+import PropertySearch from '@/components/layout/PropertySearch'
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <main className='pl-[10px] pr-[10px] lg:pl-[30px] lg:pr-[30px]'>
         <Hero />
+        <PropertySearch />
       </main>
     </>
   );

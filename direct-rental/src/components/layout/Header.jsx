@@ -28,7 +28,7 @@ const Header = () => {
 
         {/* Auth Buttons */}
         <div className="hidden lg:flex items-center gap-4 whitespace-nowrap">
-          <Link href="#" className="px-4 py-2 border-blue-500 rounded">Sign In</Link>
+          <Link href="#" className="px-4 py-2 border border-blue-500 rounded">Sign In</Link>
           <Link href="#" className="px-4 py-2 bg-blue-600 text-white rounded">Sign Up</Link>
         </div>
 
@@ -55,7 +55,7 @@ const Header = () => {
             <li><Link href="#">Contact Us</Link></li>
           </ul>
           <div className="mt-4 flex flex-col gap-2">
-            <Link href="#" className="px-4 py-2 border rounded">Sign In</Link>
+            <Link href="#" className="px-4 py-2 border border-blue-500 rounded">Sign In</Link>
             <Link href="#" className="px-4 py-2 bg-blue-600 text-white rounded">Sign Up</Link>
           </div>
         </nav>

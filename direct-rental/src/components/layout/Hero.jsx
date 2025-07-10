@@ -14,8 +14,8 @@ const Hero = () => {
             It’s simple: search listings, talk to landlords, and get the keys — all in one place.
           </p>
           <div className='md:flex md:gap-x-5 pt-[20px]'>
-            <Button label='Browse Available Homes' />
-            <Button label='List Your Property' />
+            <Button label='Browse Available Homes' className='text-blue-500 bg-white mt-1' />
+            <Button label='List Your Property' className='text-blue-500 bg-white mt-1' />
           </div>
         </div>
     </div>
