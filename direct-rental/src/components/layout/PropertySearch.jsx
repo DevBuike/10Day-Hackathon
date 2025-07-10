@@ -2,7 +2,7 @@ import Button from '@/components/layout/Button'
 
 const PropertySearch = () => {
   return (
-    <div className='bg-white rounded w-[90%] max-w-[980px] shadow-lg pt-10 px-6 lg:px-12 pb-4 mx-auto mt-[-60px]'>
+    <section className='bg-white rounded w-[90%] max-w-[980px] shadow-lg pt-10 px-6 lg:px-12 pb-4 mx-auto mt-[-60px]'>
       <form action="#">
         <div className='flex gap-2 flex-wrap lg:no-wrap lg:flex-row  justify-between items-center'>
           <input type="text" placeholder="Enter City or Neigbhourhood" className='text-gray-500 border border-gray-400 p-2 rounded' />
@@ -24,7 +24,7 @@ const PropertySearch = () => {
         </div>
         <p className='mt-3 text-gray-400'>Popular searches: <span className='text-blue-500'>Lagos Island Victoria Island Lekki Ikeja Ajah </span></p>
       </form>
-    </div>
+    </section>
   )
 }
 
