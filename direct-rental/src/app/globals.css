@@ -1,8 +1,14 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --blue: #6168FE;
+  --green: #17A34A;
 }
 
 @theme inline {
@@ -24,3 +30,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/*
+@media (width >= 64rem) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+} */
