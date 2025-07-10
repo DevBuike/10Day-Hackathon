@@ -3,7 +3,7 @@ import PropertyCard from '@/components/listings/PropertyCard';
 
 const PropertyList = () => {
   return(
-    <section className='bg-white w-[90%] max-w-[980px] mx-auto mt-20'>
+    <section className='bg-white w-[90%] max-w-[980px] mx-auto mt-20 pb-20'>
       <div className='w-[80%] max-w-[620px] text-center mx-auto'>
         <h2 className="text-3xl font-bold mb-2">Latest House Listings</h2>
         <p>

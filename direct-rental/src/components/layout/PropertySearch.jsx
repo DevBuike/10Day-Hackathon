@@ -22,7 +22,7 @@ const PropertySearch = () => {
           </select>
           <Button label='Search Property' type='submit' className=' bg-blue-500 text-white px-5' />
         </div>
-        <p className='mt-3 text-gray-400'>Popular searches: <span className='text-blue-500'>Lagos Island Victoria Island Lekki Ikeja Ajah </span></p>
+        <p className='mt-3 text-gray-400 text-sm'>Popular searches: <span className='text-blue-500'>Lagos Island Victoria Island Lekki Ikeja Ajah </span></p>
       </form>
     </section>
   )
