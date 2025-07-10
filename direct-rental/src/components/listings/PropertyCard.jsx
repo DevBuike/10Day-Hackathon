@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { FaMapMarkerAlt, FaBed, FaBath, FaRulerCombined } from 'react-icons/fa';
 
-const PropertyCard = ({propertyImage, propertyName, propertyLocation, propertyPrice, duration, noOfBed, noOfBath, dimension=''}) => {
+const PropertyCard = ({propertyType, propertyImage, propertyName, propertyLocation, propertyPrice, duration, noOfBed, noOfBath, dimension=''}) => {
   return(
     <div className='rounded shadow-lg mt-5'>
       <div className="relative h-[300px]">
+        <span className='absolute z-2 text-xs top-5 left-5 rounded bg-green-500 text-white py-2 px-3'>{propertyType}</span>
         <Image src={propertyImage} alt={`A ${propertyName}`} fill className="object-cover rounded-t-md" />
       </div>
       <div className='p-4'>
@@ -21,7 +22,7 @@ const PropertyCard = ({propertyImage, propertyName, propertyLocation, propertyPr
             <FaRulerCombined className='text-xs mr-1 text-gray-400' />{dimension}
           </div>
         </div>
-        <p className='text-green-400 font-semibold text-sm'>₦{propertyPrice}/{duration}</p>
+        <p className='font-semibold text-sm'><span className='text-green-400'>₦{propertyPrice}</span>/{duration}</p>
       </div>
     </div>
   );

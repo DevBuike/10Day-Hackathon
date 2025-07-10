@@ -11,9 +11,9 @@ const PropertyList = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-        <PropertyCard propertyImage='/assets/images/4-bedroom-apartment.jpg' propertyName='3 Bedroom Apartment' propertyLocation='Lekki Phase 1, Lagos' propertyPrice='850,000' duration='year' noOfBed='05' noOfBath='03' dimension='1300 sqft' />
-        <PropertyCard propertyImage='/assets/images/2-bedroom-cottage.jpg' propertyName='2 Bedroom Cottage' propertyLocation='Victoria Island, Lagos' propertyPrice='1,200,000' duration='year' noOfBed='05' noOfBath='03' dimension='1300 sqft' />
-        <PropertyCard propertyImage='/assets/images/modern-studio.jpg' propertyName='Modern Studio' propertyLocation='Wuse 2, Abuja' propertyPrice='450,000' duration='year' noOfBed='05' noOfBath='03' dimension='1300 sqft' />
+        <PropertyCard propertyType='Apartment' propertyImage='/assets/images/4-bedroom-apartment.jpg' propertyName='3 Bedroom Apartment' propertyLocation='Lekki Phase 1, Lagos' propertyPrice='850,000' duration='year' noOfBed='05' noOfBath='03' dimension='1300 sqft' />
+        <PropertyCard propertyType='Duplex'  propertyImage='/assets/images/2-bedroom-cottage.jpg' propertyName='2 Bedroom Cottage' propertyLocation='Victoria Island, Lagos' propertyPrice='1,200,000' duration='year' noOfBed='05' noOfBath='03' dimension='1300 sqft' />
+        <PropertyCard propertyType='Studio' propertyImage='/assets/images/modern-studio.jpg' propertyName='Modern Studio' propertyLocation='Wuse 2, Abuja' propertyPrice='450,000' duration='year' noOfBed='05' noOfBath='03' dimension='1300 sqft' />
       </div>
     </section>
   );
