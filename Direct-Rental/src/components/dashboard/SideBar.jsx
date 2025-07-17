@@ -9,7 +9,7 @@ import { FaClipboardList } from "react-icons/fa";
 const SideBar = () => {
 
   return (
-    <aside className="hidden lg:block w-[18%] h-screen bg-white text-black p-4 border border-gray-200 ">
+    <aside className="hidden md:block w-[18%] h-screen bg-white text-black p-4 border border-gray-200 ">
       <div className="w-full mx-auto flex flex-col items-start justify-start">
         
         {/* Logo */}
@@ -21,7 +21,7 @@ const SideBar = () => {
           <ul className="flex flex-col gap-4 text-gray-400">
             <li className="rounded active:text-blue-400 active:border border-blue-400 px-3 py-2 text-sm"><Link href="/dashboard" className='flex gap-2 items-center'><RiHome6Line  className='text-blue-400 text-sm' />
 Overview</Link></li>
-            <li className="rounded active:text-blue-400 active:border border-blue-400 px-3 py-2 text-sm"><Link href="/dasboard/analytics" className='flex gap-2 items-center'><MdOutlineAnalytics className='text-blue-400' />
+            <li className="rounded active:text-blue-400 active:border border-blue-400 px-3 py-2 text-sm"><Link href="/dashboard/analytics" className='flex gap-2 items-center'><MdOutlineAnalytics className='text-blue-400' />
 Analytics</Link></li>
             <li className="rounded active:text-blue-400 active:border border-blue-400 px-3 py-2 text-sm"><Link href="#" className='flex gap-2 items-center'><FaClipboardList className='text-blue-400' />
 Listings</Link></li>
@@ -33,7 +33,7 @@ Settings</Link></li>
         </nav>
 
         {/* Auth Buttons */}
-        <div className="hidden lg:flex flex-col items-center gap-4 whitespace-nowrap mt-5">
+        <div className="hidden md:flex flex-col items-center gap-4 whitespace-nowrap mt-5">
           <Link href="#" className="text-blue-400 px-2 py-1 border border-blue-500 rounded flex gap-2 items-center"><MdOutlineLogout className='text-blue-400' /><span>
 Log Out</span></Link>
         </div>

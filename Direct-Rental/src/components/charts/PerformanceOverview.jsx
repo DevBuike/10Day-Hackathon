@@ -1,6 +1,9 @@
 "use client";
 
-import Chart from "react-apexcharts";
+import dynamic from "next/dynamic";
+
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
+
 
 export default function PerformanceOverview() {
   const options = {
@@ -55,8 +58,8 @@ export default function PerformanceOverview() {
   ];
 
   return (
-    <div className="w-full p-2 md:p-10 bg-white rounded-lg border border-gray-200">
-      <Chart options={options} series={series} type="line" className="w-full" />
+    <div className="w-full p-2 bg-white rounded-lg border border-gray-200">
+      <Chart options={options} series={series} type="line" height={300} className="w-full" />
     </div>
   );
 }

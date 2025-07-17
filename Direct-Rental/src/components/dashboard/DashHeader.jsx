@@ -11,17 +11,17 @@ const DashHeader = () => {
 
   return (
     <header className="relative bg-white text-black py-4 px-4 md:px-8 w-full border border-gray-200">
-      <div className="flex items-center lg:justify-end justify-between">
+      <div className="flex items-center md:justify-end justify-between">
         
-        {/* Logo */}
-        <div className="lg:hidden text-blue-600 text-xl md:text-2xl font-bold whitespace-nowrap">
+        {/* Logo */} 
+        <div className="md:hidden text-blue-600 text-xl md:text-2xl font-bold whitespace-nowrap">
           DirectRental
         </div>
 
         {/* user highlight */}
         <div className="flex items-center gap-2 md:gap-4 whitespace-nowrap ">
-          <Pill label='verified' className='hidden lg:block text-green-500 bg-[#17A34A42]'/>
-          <div className='hidden lg:flex items-center gap-2'>
+          <Pill label='verified' className='hidden md:block text-green-500 bg-[#17A34A42]'/>
+          <div className='hidden md:flex items-center gap-2'>
             <div className='rounded-full bg-blue-600 text-white text-xs text-center p-2'>DB</div>
             <div className=''>
               <p className='text-xs font-semibold'>Hello DevBuike!</p>
@@ -31,7 +31,7 @@ const DashHeader = () => {
         
           {/* Hamburger for mobile/tablet */}
           <button
-            className="lg:hidden  text-black focus:outline-none ml-auto"
+            className="md:hidden  text-black focus:outline-none ml-auto"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
