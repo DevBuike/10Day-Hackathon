@@ -29,7 +29,7 @@ const Analytics = () => {
       
       
       
-      <main className="flex flex-col w-[85%] h-screen overflow-hidden bg-[#F9FAFB]">
+      <main className="flex flex-col w-full lg:w-[82%] h-screen overflow-hidden bg-[#F9FAFB]">
         <DashHeader />
         <section className="overflow-y-auto p-5">
           <div className="flex flex-col lg:flex-row gap-3 lg:justify-between items-start lg:items-center">

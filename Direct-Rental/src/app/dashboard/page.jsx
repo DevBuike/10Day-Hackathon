@@ -24,7 +24,7 @@ export default function DashboardPage() {
     <div className=" md:flex h-screen w-screen overflow-hidden">
       <SideBar />
       
-      <main className="flex flex-col w-[85%] h-screen overflow-hidden bg-[#F9FAFB]">
+      <main className="flex flex-col w-full lg:w-[82%] h-screen overflow-hidden bg-[#F9FAFB]">
         <DashHeader />
         <section className="overflow-y-auto p-5">
           <div className="md:flex justify-between items-center">
