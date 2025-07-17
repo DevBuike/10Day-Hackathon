@@ -3,6 +3,7 @@ import React from 'react'
 import StepCard from '../../components/onboarding/StepCard';
 import { useRouter } from "next/navigation";
 import useAuth from "@/hooks/useAuth";
+import Link from 'next/link';
 
 
 export default function Intro() {
@@ -21,10 +22,10 @@ export default function Intro() {
     <>
       <div className='border border-[#595B5A33] py-2 px-3 sm:px-14 flex items-center justify-between'>
         <p className='font-nunito text-2xl sm:text-[27px] tracking-tight font-bold text-blue-500'>DirectRental</p>
-        <button className='bg-blue-600 flex px-3 sm:px-5 py-2 sm:py-[15px] rounded-lg items-center justify-center cursor-pointer'>
+        <Link href="/dashboard" className='bg-blue-600 flex px-3 sm:px-5 py-2 sm:py-[15px] rounded-lg items-center justify-center cursor-pointer'>
           <img className='h-3 sm:h-5' src='/assets/images/dashboard-outline.png' alt="dashboardOutlineImg" />
           <p className='text-white text-xs sm:text-sm tracking-wide -mt-[2px] ml-2'>Launch Dashboard</p>
-        </button>
+        </Link>
       </div>
 
       <div className="flex flex-col justify-center items-center mt-10 mb-6 px-5">
@@ -41,10 +42,10 @@ export default function Intro() {
             <StepCard img='/assets/images/wallet.png' title="Easy Payment" bgcolor="#7A1DBC33" subtitle="Flexible payment options via Flutterwave and Paystack" />
         </div>
 
-        <button className='bg-blue-600 mt-9 flex px-5 py-[15px] rounded-lg items-center justify-center cursor-pointer'>
+        <Link href="/dashboard" className='bg-blue-600 mt-9 flex px-5 py-[15px] rounded-lg items-center justify-center cursor-pointer'>
           <img className='h-5' src='/assets/images/dashboard-outline.png' alt="dashboardOutlineImg" />
           <p className='text-white text-sm tracking-wide -mt-[2px] ml-2'>Launch Dashboard</p>
-        </button>
+        </Link>
       </div>
       
     </>
