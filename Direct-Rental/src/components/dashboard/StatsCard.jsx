@@ -1,4 +1,4 @@
-const StatsCard = ({title, statsNumber=0, percent=0}) => {
+const StatsCard = ({title, statsNumber=0, percent=0, bg='', icon='', className=''}) => {
   return(
     <div className="rounded-lg border border-gray-200 bg-white p-3 ">
       <div className="flex justify-between items-start">
@@ -7,7 +7,7 @@ const StatsCard = ({title, statsNumber=0, percent=0}) => {
           <h3 className="text-xl font-semibold mt-2">{statsNumber}</h3>
           <p className="text-gray-400 text-xs mt-2"><span className={percent < 0 ? 'text-red-500': 'text-green-500'}>{percent < 0 ? '': '+'}{percent}%</span> from last month</p>
         </div>
-        <div className="p-2 bg-[#DBE9FE]">icon</div>
+        <div className={`p-2 bg-[${bg}] ${className}`}>{icon}</div>
       </div>
     </div>
   );

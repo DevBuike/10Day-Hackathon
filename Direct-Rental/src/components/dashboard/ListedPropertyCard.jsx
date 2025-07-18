@@ -1,5 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaRegStar } from "react-icons/fa6";
+import { CiEdit, CiTrash, CiLocationOn, CiHome } from "react-icons/ci";
+import { FaRegEye } from "react-icons/fa";
+import { LuMessageCircleQuestion } from "react-icons/lu";
+
 import Pill from '@/components/dashboard/Pill';
 
 const ListedPropertyCard = ({imageSrc, name='', featured=false, description='', price='', specs='', location='', noOfViews=0, noOfInquiries=0}) => {
@@ -19,14 +24,15 @@ const ListedPropertyCard = ({imageSrc, name='', featured=false, description='', 
               </div>
             </div>
             <p className='text-gray-400 text-xs md:text-sm mt-2'>{description}</p>
-            <p className='flex flex-wrap items-start md:items-center gap-2 md:gap-6 mt-2 text-[10px] md:text-xs text-gray-400'><span>₦{price}/Year</span> <span>{specs}</span> <span>{location}</span></p>
-            <p className='flex items-center gap-6 mt-2'><span className='text-blue-500 text-xs'>{noOfViews} views</span> <span className='text-green-500 text-[10px] md:text-xs'>{noOfInquiries} Inquiries</span></p>
+            <p className='flex flex-wrap items-start md:items-center gap-2 md:gap-4 mt-2 text-[10px] md:text-xs text-gray-400'><span>₦{price}/Year</span> <span className='flex gap-1 items-center'><CiHome />
+{specs}</span> <span className='flex gap-1 items-center'><CiLocationOn />{location}</span></p>
+            <p className='flex items-center gap-6 mt-2'><span className='flex gap-1 items-center text-blue-500 text-xs'><FaRegEye />{noOfViews} views</span> <span className='flex gap-1 items-center text-green-500 text-[10px] md:text-xs'><LuMessageCircleQuestion />{noOfInquiries} Inquiries</span></p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-start gap-2">
-          <Link href="#" className='p-1 bg-[#17A34A42] rounded'>icon</Link>
-          <Link href="#" className='p-1 bg-[#17A34A42] rounded'>icon</Link>
-          <Link href="#" className='p-1 bg-[#17A34A42] rounded'>icon</Link>
+          <Link href="#" className='p-1 bg-[#FFB44F33] rounded'><FaRegStar className='text-[#FFB44F]' /></Link>
+          <Link href="#" className='p-1 bg-[#6168FE33] rounded'><CiEdit className='text-[#6168FE]' /></Link>
+          <Link href="#" className='p-1 bg-[#DC362E33] rounded'> <CiTrash className='text-[#DC362E]' /></Link>
         </div>
       </div>
       <hr className='border border-gray-200 w-full' />

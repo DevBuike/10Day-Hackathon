@@ -13,9 +13,9 @@ const SideBar = () => {
       <div className="w-full mx-auto flex flex-col items-start justify-start">
         
         {/* Logo */}
-        <div className="text-blue-600 text-2xl font-bold whitespace-nowrap mt-5">
+        <Link href="/" className="text-blue-600 text-2xl font-bold whitespace-nowrap mt-5">
           DirectRental
-        </div>
+        </Link>
 
         <nav className="hidden md:flex flex-col justify-start mt-10 w-full">
           <ul className="flex flex-col gap-4 text-gray-400">

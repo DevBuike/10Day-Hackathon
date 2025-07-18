@@ -2,6 +2,10 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import useAuth from "@/hooks/useAuth";
+import { FaRegEye } from "react-icons/fa";
+import { LuMessageCircleQuestion } from "react-icons/lu";
+import { FaFileCirclePlus } from "react-icons/fa6";
+import { GoGraph } from "react-icons/go";
 
 import DashHeader from "@/components/dashboard/DashHeader";
 import SideBar from "@/components/dashboard/SideBar";
@@ -57,10 +61,10 @@ const Analytics = () => {
 
           {/* stats */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4 items-stretch justify-between mt-5">
-            <StatsCard title='Total Views' statsNumber={2403} percent={15.3} />
-            <StatsCard title='Total Inquiries' statsNumber={230} percent={8.7} />
-            <StatsCard title='Application' statsNumber={76} percent={12.2} />
-            <StatsCard title='Conversation Rate' statsNumber={9.6} percent={-2.1} />
+            <StatsCard title='Total Views' statsNumber={2403} percent={15.3} bg='#6168FE33' icon={<FaRegEye className="text-[#6168fe]" />} className="rounded-full" />
+            <StatsCard title='Total Inquiries' statsNumber={230} percent={8.7} bg='#17A34A33' icon={<LuMessageCircleQuestion className="text-[#17A34A]" />} className="rounded-full" />
+            <StatsCard title='Application' statsNumber={76} percent={12.2} bg='#7A1DBC33' icon={<FaFileCirclePlus className="text-[#7A1DBC]" />} className="rounded-full" />
+            <StatsCard title='Conversation Rate' statsNumber={9.6} percent={-2.1} bg='#FFB44F33' icon={<GoGraph className="text-[#FFB44F]" />} className="rounded-full" />
           </div>
 
           {/* performance trend chart */}

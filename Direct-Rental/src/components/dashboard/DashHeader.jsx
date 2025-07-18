@@ -14,9 +14,9 @@ const DashHeader = () => {
       <div className="flex items-center md:justify-end justify-between">
         
         {/* Logo */} 
-        <div className="md:hidden text-blue-600 text-xl md:text-2xl font-bold whitespace-nowrap">
+        <Link href="/" className="md:hidden text-blue-600 text-xl md:text-2xl font-bold whitespace-nowrap">
           DirectRental
-        </div>
+        </Link>
 
         {/* user highlight */}
         <div className="flex items-center gap-2 md:gap-4 whitespace-nowrap ">

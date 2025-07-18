@@ -1,5 +1,7 @@
 import PerformanceOverview from "@/components/charts/PerformanceOverview";
 import StatsCard from "./StatsCard";
+import { FaRegEye } from "react-icons/fa";
+import { LuMessageCircleQuestion } from "react-icons/lu";
 
 const PropertyOverview = () => {
   return (
@@ -19,8 +21,8 @@ const PropertyOverview = () => {
           </div>
         </div> 
         
-        <StatsCard title='Total Views' statsNumber={479} percent={12.5} />
-        <StatsCard title='Total Inquiries' statsNumber={37} percent={-3} />
+        <StatsCard title='Total Views' statsNumber={479} percent={12.5} bg='#6168FE33' icon={<FaRegEye className="text-[#6168fe]" />} className="rounded-sm" />
+        <StatsCard title='Total Inquiries' statsNumber={37} percent={-3} bg='#6168FE33' icon={<LuMessageCircleQuestion className="text-[#6168fe]" />} className="rounded-sm" />
       </div>
       
     </div>

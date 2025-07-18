@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
 import useAuth from "@/hooks/useAuth";
+import { GrUpdate } from "react-icons/gr";
+import { FiUpload } from "react-icons/fi";
 
 import DashHeader from "@/components/dashboard/DashHeader";
 import SideBar from "@/components/dashboard/SideBar";
@@ -33,8 +35,8 @@ export default function DashboardPage() {
               <p className="text-gray-400 text-xs md:text-sm">Manage your property listings and track performance</p>
             </div>
             <div className="flex gap-2 items-center mt-3 md:mt-0">
-              <Link href="#" className="rounded text-xs bg-blue-500 text-white py-2 px-5">Upgrade Plan</Link>
-              <Link href="#" className="rounded text-xs bg-green-500 text-white py-2 px-5">Add Property</Link>
+              <Link href="#" className="flex items-center font-medium gap-2 rounded text-xs bg-blue-500 text-white py-2 px-5"><GrUpdate />Upgrade Plan</Link>
+              <Link href="#" className="flex items-center font-medium gap-2 rounded text-xs bg-green-500 text-white py-2 px-5"><FiUpload />Add Property</Link>
             </div>
           </div>
 
